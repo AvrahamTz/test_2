@@ -22,7 +22,7 @@ def build_standard_deck() -> list[dict]:
 
 
 def shuffle_by_suit(deck: list[dict], swaps: int = 5000) -> list[dict]:
-    for i in range(int):
+    for i in range(swaps):
         index_i = random.randint(0,len(deck)-1)
         index_j = random.randint(0,len(deck)-1)
         if index_i == index_j or (deck[index_j]['suite'] == 'H'and index_j % 5 != 0) or (deck[index_j]['suite'] == 'C'and index_j % 3 != 0) or  (deck[index_j]['suite'] == 'D'and index_j % 2 != 0) or (deck[index_j]['suite'] == 'S'and index_j % 7!= 0):
